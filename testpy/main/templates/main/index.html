@@ -1,0 +1,9 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{value}}{% endblock %}
+{% block content %}
+    Its main page!!!
+    {% for item in pets %}
+        {{ item | upper }}
+    {% endfor %}
+{% endblock %}
