@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Create News{% endblock %}
+{% block content %}
+<h2>Form for add new articles</h2>
+<form method="post">
+    {% csrf_token %}
+    {{form.title}}
+    {{form.anons}}
+    {{form.full_text}}
+    {{form.date}}
+
+<!--    <input placeholder="name article">-->
+<!--    <input placeholder="anons article">-->
+<!--    <input placeholder="text article">-->
+<!--    <input type="date"><input type="time">-->
+    <button type="submit">add new</button>
+</form>
+<span>{{error}}</span>
+{% endblock %}
