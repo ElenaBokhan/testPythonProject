@@ -7,7 +7,7 @@ body{
     background: darkgrey;
     }
 header{
-    background: #4e4343;
+    background: #8b8b8b;
     height: 120px;
 }
 header img{
@@ -30,4 +30,14 @@ header img{
 }
 .nav-bar a{
     text-decoration: none
+}
+.news-item{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 20px;
+    overflow: auto;
+    background: #8b8b8b;
+    color: white;
 }

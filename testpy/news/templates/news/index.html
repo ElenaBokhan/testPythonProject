@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}News{% endblock %}
+{% block content %}
+<h2>Новости сайта</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci
+    amet architecto asperiores delectus dignissimos ducimus earum esse est eum,
+    facere facilis illo iste libero magnam mollitia natus necessitatibus nemo numquam
+    obcaecati praesentium quaerat sint sunt temporibus vero voluptatibus!
+    Beatae commodi consectetur distinctio ducimus, laboriosam magnam minima necessitatibus quae.</p>
+    {% for el in news %}
+        <div class="news-item">
+            <p>{{el.title}}</p>
+            <p>{{el.anons}}</p>
+            <p>{{el.full_text}}</p>
+            <p>{{el.date}}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
