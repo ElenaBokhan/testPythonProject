@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}add news{% endblock %}
+{% block content %}
+<h2>Form for adding new article</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{form.title}}
+        {{form.anons}}
+        {{form.full_text}}
+        {{form.date}}
+        <span>{{err}}</span>
+        <button type="submit">add</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Details article{% endblock %}
+{% block content %}
+    <h2>Details article</h2>
+    {{article.title}}
+    {{article.anons}}
+    {{article.full_text}}
+    {{article.date}}
+    <a href="{% url 'update' article.id %}">update</a>
+    <a href="{% url 'delete' article.id %}">delete</a>
+{% endblock %}

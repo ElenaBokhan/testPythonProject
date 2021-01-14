@@ -14,6 +14,9 @@
             <p>{{el.anons}}</p>
             <p>{{el.full_text}}</p>
             <p>{{el.date}}</p>
+            <a href="{% url 'details' el.id %}">get details</a>
+            <a href="{% url 'update' el.id %}">update</a>
+            <a href="{% url 'delete' el.id %}">delete</a>
         </div>
     {% endfor %}
 {% endblock %}

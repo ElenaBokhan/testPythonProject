@@ -13,14 +13,13 @@
 <body>
     <header>
         <img src="{% static 'main/img/logo.svg' %}">
-
         <ul class="nav-bar">
             <a href="{% url 'home' %}"><li>Main</li></a>
             <a href="{% url 'about' %}"><li>About</li></a>
             <a href="{% url 'news_home' %}"><li>News</li></a>
             <a href="{% url 'contacts' %}"><li>Contacts</li></a>
+            <a href="{% url 'create' %}"><li>Add new</li></a>
         </ul>
-
     </header>
 {% block content %}
 {% endblock %}

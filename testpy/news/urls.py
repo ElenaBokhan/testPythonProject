@@ -18,4 +18,8 @@ from . import views
 
 urlpatterns = [
     path('', views.news, name="news_home"),
+    path('create/', views.create, name="create"),
+    path('<int:pk>', views.DetailsShow.as_view(), name="details"),
+    path('<int:pk>/update', views.UpdateNews.as_view(), name="update"),
+    path('<int:pk>/delete', views.DeleteNews.as_view(), name="delete"),
 ]
